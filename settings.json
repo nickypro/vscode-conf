@@ -1,0 +1,9 @@
+{   
+    "keyboard.dispatch": "keyCode",
+    "workbench.colorTheme": "Abyss",
+    "editor.fontSize": 16,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "jupyter.askForKernelRestart": false,
+    "tabnine.experimentalAutoImports": true
+}
