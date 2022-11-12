@@ -1,4 +1,4 @@
-sudo apt update
+sudo apt -qq update
 sudo apt -y -qq install vim \
     python3 \
     python3-pip \
