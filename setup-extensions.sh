@@ -9,8 +9,7 @@ wget https://cloud.nicky.pro/s/nTqxjpX325xCAHE/download -O pylance.vsix && \
   code-server --install-extension pylance.vsix && \
   rm pylance.vsix
 
-# Lines to add to settings
-SETTINGS_JSON="/home/nicky/.local/share/code-server/User/settings.json"
-L1='\n    "keyboard.dispatch":  "keyCode",'
-L2='\n    "workbench.colorTheme": "Abyss",'
-sed -i "s/{/{$L1$L2/" $SETTINGS_JSON
+# import default settings.json
+curl -fsSL https://raw.githubusercontent.com/pesvut/vscode-conf/main/settings.json
+mkdir -p /home/nicky/.local/share/code-server/User/
+mv settings.json /home/nicky/.local/share/code-server/User/
