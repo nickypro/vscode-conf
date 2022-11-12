@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt -y install vim \
+sudo apt -y -qq install vim \
     python3 \
     python3-pip \
     python-is-python3 \
@@ -7,7 +7,7 @@ sudo apt -y install vim \
     wget \
     htop
 
-pip3 install numpy \
+pip3 install -qq numpy \
     matplotlib \
     seaborn \
     transformers \
