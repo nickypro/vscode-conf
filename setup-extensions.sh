@@ -10,6 +10,6 @@ wget https://cloud.nicky.pro/s/nTqxjpX325xCAHE/download -O pylance.vsix && \
   rm pylance.vsix
 
 # import default settings.json
-curl -fsSL https://raw.githubusercontent.com/pesvut/vscode-conf/main/settings.json
 mkdir -p /home/nicky/.local/share/code-server/User/
+curl -fsSL https://raw.githubusercontent.com/pesvut/vscode-conf/main/settings.json > settings.json
 mv settings.json /home/nicky/.local/share/code-server/User/
