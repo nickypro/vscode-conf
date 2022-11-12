@@ -10,7 +10,7 @@ wget https://cloud.nicky.pro/s/nTqxjpX325xCAHE/download -O pylance.vsix && \
   rm pylance.vsix
 
 # Lines to add to settings
-SETTINGS_JSON="$HOME/.local/share/code-server/User/settings.json"
+SETTINGS_JSON="/home/nicky/.local/share/code-server/User/settings.json"
 L1='\n    "keyboard.dispatch":  "keyCode",'
 L2='\n    "workbench.colorTheme": "Abyss",'
 sed -i "s/{/{$L1$L2/" $SETTINGS_JSON
