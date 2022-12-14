@@ -5,5 +5,8 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "jupyter.askForKernelRestart": false,
-    "tabnine.experimentalAutoImports": true
+    "tabnine.experimentalAutoImports": true,
+    "python.linting.pylintArgs": [
+        "--generated-members=numpy.* ,torch.*"
+    ]
 }
